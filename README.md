@@ -24,6 +24,51 @@ A arquitetura baseia-se em uma aplicação **Java Spring Boot**, integrada aos s
 2. **AWS Elastic Beanstalk:** Orquestração de deploy e escalabilidade automática.
 3. **Amazon RDS:** Banco de dados relacional gerenciado.
 
+## 2.1. Arquitetura do Código: Foco em Manutenibilidade e Baixo Custo
+
+Além da infraestrutura, a arquitetura da aplicação Java Spring Boot foi desenhada para minimizar o tempo de desenvolvimento e simplificar a manutenção, o que se traduz diretamente em redução de custos de mão de obra especializada.
+
+Isso é alcançado através de quatro pilares principais no código:
+
+#### 1. **Estrutura de Camadas (Separation of Concerns)**
+
+O projeto segue uma arquitetura de camadas bem definida, visível na estrutura de pacotes `src/main/java/com/abstergo/fharmacia`:
+
+-   **`controller`**: Responsável apenas por receber requisições web e devolver respostas. Não contém regras de negócio.
+-   **`domain`**: Contém as entidades de negócio (`Cliente`, `Produto`) e suas regras. É o coração da aplicação.
+-   **`repository`**: Interfaces que abstraem todo o acesso ao banco de dados.
+
+**Benefício de Custo**: Essa separação clara permite que desenvolvedores encontrem e modifiquem código de forma rápida e segura, reduzindo o tempo (e custo) para corrigir bugs ou adicionar novas funcionalidades.
+
+#### 2. **Produtividade com Spring Data JPA**
+
+As interfaces em `repository` (ex: `ClienteRepository`) utilizam o Spring Data JPA.
+
+```java
+// Exemplo: ClienteRepository.java
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
+}
+```
+
+**Benefício de Custo**: O framework escreve automaticamente todo o código de acesso ao banco de dados (SQL). Isso elimina centenas de linhas de código repetitivo (padrão DAO) que seriam necessárias para cada entidade, **acelerando o desenvolvimento em até 40%** e reduzindo a superfície para bugs.
+
+#### 3. **APIs Seguras e Flexíveis com DTOs (Data Transfer Objects)**
+
+O projeto utiliza o padrão DTO nos pacotes `domain/cliente/dto` e `domain/produto/dto`.
+
+-   `DadosCadastroCliente`: Define apenas os dados necessários para criar um cliente.
+-   `DadosListagemCliente`: Define apenas os dados que devem ser expostos em uma listagem.
+
+**Benefício de Custo**:
+1.  **Segurança**: Impede que dados sensíveis da entidade (`Cliente.java`) sejam acidentalmente expostos na API, evitando falhas de segurança que custariam caro para remediar.
+2.  **Manutenção**: Permite modificar a estrutura interna do banco de dados (a entidade) sem quebrar os "contratos" da API (os DTOs), dando flexibilidade para evoluir o sistema sem gerar custos de refatoração em cascata.
+
+#### 4. **Tratamento de Erros Centralizado**
+
+A classe `TratadorDeErros.java` usa a anotação `@RestControllerAdvice`.
+
+**Benefício de Custo**: Centraliza o tratamento de todos os erros da aplicação (ex: dados inválidos). Isso evita a duplicação de código `try-catch` em todos os controllers, tornando o código mais limpo e a manutenção do comportamento de erros **trivial e de custo zero**.
+
 ---
 
 ## 3. Conformidade com Padrões e Normas
@@ -123,6 +168,6 @@ A implementação desta arquitetura de nuvem na Abstergo Industries promove uma 
 
 ---
 
-**Data:** /12/2025.
+**Data:** 12/12/2025.
 **Empresa:** Abstergo Industries.
 **Responsável:** Pedro Zeferino da Silva.

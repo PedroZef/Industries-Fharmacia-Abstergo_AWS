@@ -1,0 +1,16 @@
+com\abstergo\fharmacia\domain\cliente\Cliente.class
+com\abstergo\fharmacia\domain\produto\dto\DadosCadastroProduto.class
+com\abstergo\fharmacia\repository\ProdutoRepository.class
+com\abstergo\fharmacia\repository\ClienteRepository.class
+com\abstergo\fharmacia\domain\cliente\dto\DadosAtualizacaoCliente.class
+com\abstergo\fharmacia\domain\cliente\dto\DadosListagemCliente.class
+com\abstergo\fharmacia\infra\exception\DadosErroValidacao.class
+com\abstergo\fharmacia\domain\produto\dto\DadosListagemProduto.class
+com\abstergo\fharmacia\domain\endereco\Endereco.class
+com\abstergo\fharmacia\domain\produto\Produto.class
+com\abstergo\fharmacia\FharmaciaApplication.class
+com\abstergo\fharmacia\domain\cliente\dto\DadosCadastroCliente.class
+com\abstergo\fharmacia\controller\ClienteController.class
+com\abstergo\fharmacia\infra\exception\TratadorDeErros.class
+com\abstergo\fharmacia\controller\ProdutoController.class
+com\abstergo\fharmacia\domain\produto\dto\DadosAtualizacaoProduto.class
