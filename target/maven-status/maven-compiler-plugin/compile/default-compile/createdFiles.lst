@@ -1,5 +1,7 @@
 com\abstergo\fharmacia\domain\cliente\Cliente.class
 com\abstergo\fharmacia\domain\produto\dto\DadosCadastroProduto.class
+com\abstergo\fharmacia\domain\produto\dto\DadosDetalhamentoProduto.class
+com\abstergo\fharmacia\domain\cliente\dto\DadosDetalhamentoCliente.class
 com\abstergo\fharmacia\repository\ProdutoRepository.class
 com\abstergo\fharmacia\repository\ClienteRepository.class
 com\abstergo\fharmacia\domain\cliente\dto\DadosAtualizacaoCliente.class
@@ -11,6 +13,7 @@ com\abstergo\fharmacia\domain\produto\Produto.class
 com\abstergo\fharmacia\FharmaciaApplication.class
 com\abstergo\fharmacia\domain\cliente\dto\DadosCadastroCliente.class
 com\abstergo\fharmacia\controller\ClienteController.class
+com\abstergo\fharmacia\domain\endereco\dto\DadosEndereco.class
 com\abstergo\fharmacia\infra\exception\TratadorDeErros.class
 com\abstergo\fharmacia\controller\ProdutoController.class
 com\abstergo\fharmacia\domain\produto\dto\DadosAtualizacaoProduto.class

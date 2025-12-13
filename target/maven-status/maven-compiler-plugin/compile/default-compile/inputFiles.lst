@@ -3,6 +3,7 @@ D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmac
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\repository\ProdutoRepository.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\endereco\Endereco.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\controller\ProdutoController.java
+D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\cliente\dto\DadosDetalhamentoCliente.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\cliente\Cliente.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\controller\ClienteController.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\FharmaciaApplication.java
@@ -13,4 +14,6 @@ D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmac
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\cliente\dto\DadosListagemCliente.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\cliente\dto\DadosAtualizacaoCliente.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\cliente\dto\DadosCadastroCliente.java
+D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\endereco\dto\DadosEndereco.java
+D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\produto\dto\DadosDetalhamentoProduto.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\produto\dto\DadosListagemProduto.java

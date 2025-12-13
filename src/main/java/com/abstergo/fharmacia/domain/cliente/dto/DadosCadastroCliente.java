@@ -1,29 +1,20 @@
 package com.abstergo.fharmacia.domain.cliente.dto;
 
-import com.abstergo.fharmacia.domain.endereco.Endereco;
+import com.abstergo.fharmacia.domain.endereco.dto.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import org.hibernate.validator.constraints.br.CPF;
+import jakarta.validation.constraints.Size;
 
 public record DadosCadastroCliente(
-        @NotBlank
-        String nome,
+                @NotBlank(message = "Nome do cliente é obrigatório") @Size(min = 3, max = 100) String nome,
 
-        @NotBlank
-        @Email
-        String email,
+                @NotBlank @Email String email,
 
-        @NotBlank
-        @CPF
-        String cpf,
+                @NotBlank String cpf,
 
-        @NotBlank
-        String telefone,
+                @NotBlank String telefone,
 
-        @NotNull
-        @Valid
-        Endereco endereco
-) {
+                @NotNull @Valid DadosEndereco endereco) {
 }
