@@ -1,0 +1,64 @@
+# =====================================================================================
+# Arquivos e diretórios gerados pelo Maven
+# =====================================================================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# =====================================================================================
+# Arquivos de log e logs de crash da JVM
+# =====================================================================================
+*.log
+hs_err_pid*
+replay_pid*
+
+# =====================================================================================
+# Arquivos de IDEs (Ambientes de Desenvolvimento)
+# =====================================================================================
+# IntelliJ
+.idea/
+*.iml
+*.iws
+.out/
+.vscode
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+.nb-gradle/
+
+# =====================================================================================
+# Pacotes e arquivos compactados (geralmente já cobertos pelo 'target/')
+# =====================================================================================
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# =====================================================================================
+# Outros
+# =====================================================================================
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Itens que já estavam no seu arquivo
+*.ctxt
+.mtj.tmp/
