@@ -2,7 +2,7 @@
 
 ![Logotipo da Abstergo Industries](./assets/logotipo_corporativo.png)
 
-**Data:** 12/12/2025  
+**Data_Inicio:** 12/12/2025  
 **Empresa:** Abstergo Industries  
 **Responsável:** Pedro Zeferino da Silva
 
@@ -16,9 +16,7 @@ Este projeto apresenta a modernização da aplicação "Plataforma Virtual" da A
 
 ## 2. Arquitetura e Serviços Selecionados
 
-![Arquitetura da Solução](./assets/infográfico_corporat.png)
-
-A arquitetura baseia-se em uma aplicação **Java Spring Boot**, integrada aos seguintes serviços gerenciados:
+A arquitetura baseia-se em uma aplicação **Java Spring Boot** conforme ![Entidade Relacional](./assets/Entidade_Relacional.png) ./), integrada aos seguintes serviços gerenciados:
 
 1. **Amazon Cognito:** Gerenciamento de autenticação e identidade.
 2. **AWS Elastic Beanstalk:** Orquestração de deploy e escalabilidade automática.
@@ -36,6 +34,9 @@ A escolha destes três serviços não foi baseada apenas em custo, mas também n
 ---
 
 ## 4. Benefícios Financeiros e Operacionais
+
+![Arquitetura da Solução AWS mostrando integração entre Amazon Cognito para autenticação, AWS Elastic Beanstalk para orquestração de deploy, e Amazon RDS para banco de dados relacional, com aplicação Java Spring Boot centralizada](./assets/infográfico_corporat.png)
+
 
 - **Redução de OpEx:** Substituição de custos fixos de servidores por um modelo "pague pelo que usar".
 - **Elasticidade:** Ajuste automático da capacidade conforme a demanda, evitando gastos com ociosidade ou sobrecarga.
@@ -77,3 +78,9 @@ A implementação desta arquitetura de nuvem na Abstergo Industries promove uma 
 - [Amazon Cognito](https://aws.amazon.com/pt/cognito/)
 - [AWS Elastic Beanstalk](https://aws.amazon.com/pt/elasticbeanstalk/)
 - [Amazon RDS](https://aws.amazon.com/pt/rds/)
+
+---
+
+**Data_Final:** 14/12/2025  
+**Empresa:** Abstergo Industries  
+**Responsável:** Pedro Zeferino da Silva
