@@ -24,7 +24,7 @@ public class ClienteController {
 
     @PostMapping
     @Transactional
-    public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroCliente dados, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity<DadosDetalhamentoCliente> cadastrar(@RequestBody @Valid DadosCadastroCliente dados, UriComponentsBuilder uriBuilder) {
         var cliente = new Cliente(dados);
         repository.save(cliente);
 
@@ -53,7 +53,7 @@ public class ClienteController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity detalhar(@PathVariable Long id) {
+    public ResponseEntity<DadosDetalhamentoCliente> detalhar(@PathVariable Long id) {
         var cliente = repository.findById(id).orElseThrow(jakarta.persistence.EntityNotFoundException::new);
         var endereco = cliente.getEndereco();
         var dadosEndereco = new DadosEndereco(endereco.getLogradouro(), endereco.getNumero(), endereco.getComplemento(),
@@ -65,7 +65,7 @@ public class ClienteController {
 
     @PutMapping
     @Transactional
-    public ResponseEntity atualizar(@RequestBody @Valid DadosAtualizacaoCliente dados) {
+    public ResponseEntity<DadosDetalhamentoCliente> atualizar(@RequestBody @Valid DadosAtualizacaoCliente dados) {
         var cliente = repository.findById(dados.id()).orElseThrow(jakarta.persistence.EntityNotFoundException::new);
         cliente.atualizarInformacoes(dados);
         repository.save(cliente);
@@ -80,7 +80,7 @@ public class ClienteController {
 
     @DeleteMapping("/{id}")
     @Transactional
-    public ResponseEntity excluir(@PathVariable Long id) {
+    public ResponseEntity<Void> excluir(@PathVariable Long id) {
         repository.deleteById(id);
         return ResponseEntity.noContent().build();
     }

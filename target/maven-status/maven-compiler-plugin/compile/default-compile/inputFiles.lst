@@ -13,7 +13,6 @@ D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmac
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\produto\dto\DadosListagemProduto.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\domain\produto\Produto.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\FharmaciaApplication.java
-D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\infra\config\OpenApiConfig.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\infra\exception\DadosErroValidacao.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\infra\exception\TratadorDeErros.java
 D:\Projects\Industries-Fharmacia-Abstergo_AWS\src\main\java\com\abstergo\fharmacia\repository\ClienteRepository.java

@@ -23,7 +23,7 @@ public class ProdutoController {
 
     @PostMapping
     @Transactional
-    public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroProduto dados, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity<DadosDetalhamentoProduto> cadastrar(@RequestBody @Valid DadosCadastroProduto dados, UriComponentsBuilder uriBuilder) {
         var produto = new Produto(dados);
         repository.save(produto);
 
@@ -44,7 +44,7 @@ public class ProdutoController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity detalhar(@PathVariable Long id) {
+    public ResponseEntity<DadosDetalhamentoProduto> detalhar(@PathVariable Long id) {
         var produto = repository.findById(id).orElseThrow(jakarta.persistence.EntityNotFoundException::new);
         var detalhes = new DadosDetalhamentoProduto(produto.getId(), produto.getNome(), produto.getDescricao(),
                 produto.getPreco(), produto.getFabricante(), produto.getQuantidadeEstoque());
@@ -53,7 +53,7 @@ public class ProdutoController {
 
     @PutMapping
     @Transactional
-    public ResponseEntity atualizar(@RequestBody @Valid DadosAtualizacaoProduto dados) {
+    public ResponseEntity<DadosDetalhamentoProduto> atualizar(@RequestBody @Valid DadosAtualizacaoProduto dados) {
         var produto = repository.findById(dados.id()).orElseThrow(jakarta.persistence.EntityNotFoundException::new);
         produto.atualizarInformacoes(dados);
         repository.save(produto);
@@ -65,7 +65,7 @@ public class ProdutoController {
 
     @DeleteMapping("/{id}")
     @Transactional
-    public ResponseEntity excluir(@PathVariable Long id) {
+    public ResponseEntity<Void> excluir(@PathVariable Long id) {
         repository.deleteById(id);
         return ResponseEntity.noContent().build();
     }

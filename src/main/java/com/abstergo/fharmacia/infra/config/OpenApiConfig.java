@@ -24,5 +24,4 @@ public class OpenApiConfig {
                         .url("https://github.com/PedroZef/Industries-Fharmacia-Abstergo_AWS"));
     }
 
-
 }

@@ -67,7 +67,13 @@ Para informações detalhadas sobre a arquitetura do código, como configurar o 
 
 ---
 
-## 7. Considerações Finais
+## 7. Licença
+
+Este projeto está licenciado sob direitos autorais em 2025 a [Licença MIT](https://opensource.org/licenses/MIT).
+
+---
+
+## 8. Considerações Finais
 
 A implementação desta arquitetura de nuvem na Abstergo Industries promove uma infraestrutura robusta, segura, econômica e escalável. A utilização combinada de **Cognito, Elastic Beanstalk e RDS** garante que a empresa foque no negócio e não na manutenção de hardware.
 
