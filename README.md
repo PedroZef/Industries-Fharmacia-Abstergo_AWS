@@ -37,7 +37,6 @@ A escolha destes três serviços não foi baseada apenas em custo, mas também n
 
 ![Arquitetura da Solução AWS mostrando integração entre Amazon Cognito para autenticação, AWS Elastic Beanstalk para orquestração de deploy, e Amazon RDS para banco de dados relacional, com aplicação Java Spring Boot centralizada](./assets/infográfico_corporat.png)
 
-
 - **Redução de OpEx:** Substituição de custos fixos de servidores por um modelo "pague pelo que usar".
 - **Elasticidade:** Ajuste automático da capacidade conforme a demanda, evitando gastos com ociosidade ou sobrecarga.
 
