@@ -5,6 +5,7 @@ com\abstergo\fharmacia\domain\cliente\dto\DadosDetalhamentoCliente.class
 com\abstergo\fharmacia\repository\ProdutoRepository.class
 com\abstergo\fharmacia\repository\ClienteRepository.class
 com\abstergo\fharmacia\domain\cliente\dto\DadosAtualizacaoCliente.class
+com\abstergo\fharmacia\infra\config\OpenApiConfig.class
 com\abstergo\fharmacia\domain\cliente\dto\DadosListagemCliente.class
 com\abstergo\fharmacia\infra\exception\DadosErroValidacao.class
 com\abstergo\fharmacia\domain\produto\dto\DadosListagemProduto.class

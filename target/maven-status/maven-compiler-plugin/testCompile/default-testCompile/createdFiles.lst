@@ -1,2 +1,4 @@
+com\abstergo\fharmacia\repository\ClienteRepositoryTest.class
+com\abstergo\fharmacia\repository\ProdutoRepositoryTest.class
 com\abstergo\fharmacia\controller\ClienteControllerTest.class
 com\abstergo\fharmacia\controller\ProdutoControllerTest.class
